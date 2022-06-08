@@ -9,7 +9,7 @@ const Collection = require('./collection.model');
 
 const POSTGRES_URI = process.env.NODE_ENV === "test" ? 'sqlite:memory:' : process.env.DATABASE_URL;
 
-const SequelizeOptions = 
+let SequelizeOptions = 
     process.env.NODE_ENV === "production" 
     ? 
     {
@@ -21,7 +21,7 @@ const SequelizeOptions =
         },
     } : {};
 
-const sequelize = new Sequelize(POSTGRES_URI, SequelizeOptions);
+let sequelize = new Sequelize(POSTGRES_URI, SequelizeOptions);
 
 const clothesTable = clothes(sequelize, DataTypes);
 const foodTable = food(sequelize, DataTypes);
