@@ -1,0 +1,23 @@
+{
+    "development": {
+        "usernaem": "username",
+        "password": "password",
+        "database": "lab04",
+        "host": "127.0.0.1",
+        "dialect": "postgres"
+    },
+    "test": {
+        "usernaem": "username",
+        "password": "password",
+        "database": "lab04",
+        "host": "127.0.0.1",
+        "dialect": "sqlite:memory:"
+    },
+    "production": {
+        "usernaem": "username",
+        "password": "password",
+        "database": "lab04",
+        "host": "127.0.0.1",
+        "dialect": "postgres"
+    }
+}
