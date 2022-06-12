@@ -30,7 +30,6 @@ const clothesCollection = new Collection(clothesTable);
 const foodCollection = new Collection(foodTable);
 
 
-
 module.exports = {
     db: sequelize,
     clothes: clothesCollection,
